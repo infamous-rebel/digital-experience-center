@@ -1,7 +1,13 @@
 'use client';
 
-import StudioZExperienceCenter from './components/scenes/StudioZLandingWrapper';
+import { LobbyScene } from './components/scenes/Lobby';
+import { NavigationHub } from './components/ui/NavigationHub';
 
 export default function Home() {
-  return <StudioZExperienceCenter />;
+  return (
+    <main className="h-screen w-screen bg-black overflow-hidden relative">
+      <LobbyScene />
+      <NavigationHub />
+    </main>
+  );
 }

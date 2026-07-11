@@ -1,11 +1,10 @@
 # Studio Z Digital Experience Center
 
-A premium immersive virtual venue.
+Full immersive 3D virtual venue.
 
-## Features
-- Cinematic 3D experiences
-- Spatial audio
-- Interactive holograms
-- Navigation hub
+## Components Included
+- Lobby with concierge
+- Hologram Theatre with gestures
+- Navigation Hub
 
-Clone and `npm run dev` to explore.
+Expand with more rooms from the master vision.
