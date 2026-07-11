@@ -1,15 +1,20 @@
 'use client';
 
-import { LobbyScene } from './components/scenes/Lobby';
+import { useState } from 'react';
+import { ThreeDNavigationLobby } from './components/scenes/ThreeDNavigationLobby';
 import { NavigationHub } from './components/ui/NavigationHub';
-import { AICreativeDirector } from './components/concierge/AICreativeDirector';
 
 export default function Home() {
+  const [selectedRoom, setSelectedRoom] = useState<string | null>(null);
+
+  const handleRoomSelect = (room: string) => {
+    window.location.href = `/${room}`;
+  };
+
   return (
     <main className="h-screen w-screen bg-black overflow-hidden relative">
-      <LobbyScene />
+      <ThreeDNavigationLobby onSelectRoom={handleRoomSelect} />
       <NavigationHub />
-      <AICreativeDirector />
     </main>
   );
 }
