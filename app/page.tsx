@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { ThreeDNavigationLobby } from './components/scenes/ThreeDNavigationLobby';
 import { NavigationHub } from './components/ui/NavigationHub';
